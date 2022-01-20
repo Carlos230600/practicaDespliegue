@@ -10,6 +10,6 @@ function my_autoload($modelname){
 	} 
 }
 
-myAutoload('my_autoload');
+spl_autoload_register('my_autoload');
 
 ?>
