@@ -7,7 +7,7 @@ class Database {
 	}
 
 	function connect(){
-		$con = new mysqli("us-cdbr-east-05.cleardb.net","b0ff30c08492b9","d8858879","heroku_df7ad7a7f57ac57");
+		$con = new mysqli($this->host,$this->user,$this->pass,$this->ddbb);
 		$con->query("set sql_mode=''");
 		return $con;
 	}
