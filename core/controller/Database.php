@@ -7,7 +7,7 @@ class Database {
 	}
 
 	function connect(){
-		$con = new mysqli($this->host,$this->user,$this->pass,$this->ddbb);
+		$con = new mysqli($this->host="us-cdbr-east-05.cleardb.net",$this->user="b0ff30c08492b9",$this->pass="d8858879",$this->ddbb="heroku_df7ad7a7f57ac57");
 		$con->query("set sql_mode=''");
 		return $con;
 	}
